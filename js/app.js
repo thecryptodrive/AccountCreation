@@ -138,8 +138,8 @@ $(document).ready(async function () {
             console.log(result);
             feedback.addClass('alert-success').text('Account: ' + username + ' has been created successfully.');
           } else {
-            console.log(e);
-            feedback.addClass('alert-danger').text(e.message);
+            console.log(err);
+            feedback.addClass('alert-danger').text(err.message);
           }
 
         });
