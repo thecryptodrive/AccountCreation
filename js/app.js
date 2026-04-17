@@ -39,7 +39,7 @@ function getAccountCreationFee() {
 
 $(document).ready(async function () {
   let creationFee = await getAccountCreationFee();
-  $('#fee-message').html(`Enter the BLURT account who will be paying the <b>${creationFee}</b> account creation fee.`);
+  $('#fee-message').html(`Enter the <b>Blurt</b> account that will be paying the <b>${creationFee}</b> account creation fee.`);
   // Check if the name is available
   $('#new-account').on('input', async function () {
     let letterNumber = /^[a-z0-9]+(\.|\-)?[a-z0-9]{3,}$/;
